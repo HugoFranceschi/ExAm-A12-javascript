@@ -6,6 +6,22 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<script></script>
+		<script>
+			function sumNumbers(n) {
+				let compteur = 0;
+
+				for (let i = 0; i <= n; i++) {
+					// i = 0
+					compteur = i + compteur;
+				}
+
+				return compteur;
+			}
+
+			// Exemple de test
+			let resultat = sumNumbers(5); // Output attendu : 15 = 1+2+3+4+5
+
+			console.log(resultat);
+		</script>
 	</body>
 </html>

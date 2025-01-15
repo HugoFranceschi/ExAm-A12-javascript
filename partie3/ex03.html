@@ -6,6 +6,21 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<script></script>
+		<script>
+			function countVowels(str) {
+				let nombre = 0;
+
+				for (let i = 0; i < str; i++) {
+					if (str == "a" || "e" || "i" || "o" || "u" || "y") {
+						nombre++;
+					}
+				}
+				return nombre;
+			}
+
+			// Exemple de test
+			console.log(countVowels("javascript")); // Output attendu : 3
+		</script>
 	</body>
+	</html> 
 </html>

@@ -6,6 +6,21 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<script></script>
+		<script>
+			function isDivisibleBy3And5(num) {
+				if (num % 3 == 0 && num % 5 == 0) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+			// Exemple de test
+			console.log(isDivisibleBy3And5(15)); // Output attendu : true
+			console.log(isDivisibleBy3And5(10)); // Output attendu : false
+			console.log(isDivisibleBy3And5(5)); // Output attendu : false
+			console.log(isDivisibleBy3And5(30)); // Output attendu : true
+			console.log(isDivisibleBy3And5(8)); // Output attendu : false
+		</script>
 	</body>
 </html>

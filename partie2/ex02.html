@@ -6,6 +6,17 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<script></script>
+		<script>
+			function checkAge(age) {
+				if (age < 18) {
+					return "Mineur";
+				} else {
+					return "Majeur";
+				}
+			}
+
+			// Exemple de test
+			console.log(checkAge(20)); // Output attendu : "Majeur"
+		</script>
 	</body>
 </html>

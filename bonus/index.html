@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			function detectPLusPetit(nombre1, nombre2) {
+				if (nombre1 < nombre2) {
+					return nombre1;
+				} else if (nombre2 < nombre1) {
+					return nombre2;
+				} else if (nombre1 == nombre2) {
+					return nombre1;
+				}
+			}
+
+			console.log(detectPLusPetit(0, 1)); // Output: 0
+			console.log(detectPLusPetit(10, 1)); // Output: 1
+			console.log(detectPLusPetit(10, 10)); // Output: 10
+		</script>
+	</body>
+</html>
