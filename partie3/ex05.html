@@ -6,6 +6,30 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<script></script>
+		<script>
+			/**
+			 *
+			 * @param {string} str
+			 *
+			 */
+			// 5
+			// 4
+			// 3
+			function reverseString(str) {
+				//coucou ; length = 6 -1 -2
+				let nouveauText = "";
+
+				for (let i = 0; i < str.length; i++) {
+					nouveauText = nouveauText + str[str.length - 1 - i]; //c, o, u, c, o, u
+				}
+
+				return nouveauText;
+			}
+
+			// Exemple de test
+			console.log(reverseString("hello")); // Output attendu : "olleh"
+
+			console.log(reverseString("coucou")); // "uocuoc"
+		</script>
 	</body>
 </html>

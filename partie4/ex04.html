@@ -6,6 +6,19 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<script></script>
+		<script>
+			function factorial(n) {
+				let resultat = 1;
+
+				for (let i = 1; i <= n; i++) {
+					resultat = i * resultat;
+				}
+
+				return resultat;
+			}
+
+			// Exemple de test
+			console.log(factorial(5)); // Output attendu : 120
+		</script>
 	</body>
 </html>

@@ -7,18 +7,15 @@
 	</head>
 	<body>
 		<script>
-			function countVowels(str) {
+			function countVowels(str) { //str="javascript"
 				let resultat = 0;
 
-				for (let i = 0; i < str; i++) {
-					if (str == "a" || "e" || "i" || "o" || "u" || "y") {
+				for (let i = 0; i < str.length; i++) {
+					if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u" || str[i] == "y") {
 						resultat++;
 					}
-					
 				}
-				
 				return resultat;
-				
 			}
 
 			// Exemple de test

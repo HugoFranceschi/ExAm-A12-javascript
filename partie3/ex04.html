@@ -6,6 +6,18 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<script></script>
+		<script>
+			function printMultiples(n) {
+				for (let i = 1; i < n; i++) {
+					if (i % 3 == 0) {
+						console.log(i);
+					}
+				}
+			}
+
+			// Exemple de test
+			printMultiples(10); // Output attendu : 3, 6, 9
+			printMultiples(20); // 3 6 9 12 15 18
+		</script>
 	</body>
 </html>

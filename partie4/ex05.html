@@ -6,6 +6,27 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<script></script>
+		<script>
+			function isPalindrome(str) {
+				let text1 = str;
+				let text2 = "";
+
+				for (let i = 0; i < str.length; i++) {
+					text2 = text2 + str[str.length - 1 - i];
+				}
+				if (text1 == text2) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+			// Exemple de test
+			console.log(isPalindrome("radar")); // Output attendu : true
+			console.log(isPalindrome("le gros rat")); // Output attendu : false
+			console.log(isPalindrome("toto")); // Output attendu : false
+			console.log(isPalindrome("kayak")); // true
+			console.log(isPalindrome("a man a plan a canal panama")); //  true
+		</script>
 	</body>
 </html>
